@@ -4,5 +4,7 @@ export default function handler(req, res) {
 
   res.status(200).json({
     color
+    timestamp: new Date().toISOString(),
+    source: "https://interfaces.marco-schmidt.com/randomcolor
   });
 }
