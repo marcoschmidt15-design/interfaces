@@ -4,6 +4,6 @@ export default function handler(req, res) {
   res.status(200).json({
     number,
     timestamp: new Date().toISOString(),
-    source: "https://interfaces.marco-schmidt.com/randomnumber
+    source: "https://interfaces.marco-schmidt.com/randomnumber"
   });
 }
