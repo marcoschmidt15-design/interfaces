@@ -8,8 +8,6 @@ export default function handler(req, res) {
     { lang: "pt", text: "Eu te amo" },
     { lang: "nl", text: "Ik hou van jou" },
     { lang: "sv", text: "Jag älskar dig" },
-    { lang: "pl", text: "Kocham cię" },
-    { lang: "ja", text: "愛してる" }
   ];
 
   const random = messages[Math.floor(Math.random() * messages.length)];
@@ -18,6 +16,6 @@ export default function handler(req, res) {
     language: random.lang,
     message: random.text,
     timestamp: new Date().toISOString(),
-    source: "https://interfaces.marco-schmidt.com/love"
+    source: "https://interfaces.marco-schmidt.com/api/love"
   });
 }
